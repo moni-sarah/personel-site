@@ -5,31 +5,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sarah Monica</title>
+    <script src="https://kit.fontawesome.com/7a9ac4910e.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>Sarah Monica Personel Website</title>
 </head>
 <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Saralogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#"></a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="Projects">Projects</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                    <li><a href="My Service">Service</a></li>
+                    <li><a href="Blog">Blog</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst/Web Developer</p>
+                <h1>Hi, I'm <span>Sarah</span> Monica <br>From Norway </h1>
+            </div>
+        </div>
+        <!---About-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                      <img src="images/fausto-sandoval-f5RTaEwpGSo-unsplash.jpg" alt="">
+                   </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also the leap into electronic typesetting,
+                             remaining essentially unchanged.
+                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                          
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Data Analyst</span><br>Analyse data and build visualization</li>
+                                <li><span>Web Developmnt </span><br>Building Website and Application</li>
+                                <li><span>Application Developmnt</span><br>Business Inteligent</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Data Analyst</span><br>Analyse data and build visualization</li>
+                                <li><span>Web Developmnt </span><br>Building Website and Application</li>
+                                <li><span>Power Bi</span><br>Business Inteligent</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>IBM Data Science</li>
+                                <li><span>2020 </span><br>Havard University Indrodaction to Computer Science</li>
+                                <li><span>2013-2015</span><br>Administration and economi </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+    <!-----------Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Warehouse</h2>
+                    <p>When all the data is gathered in one place,
+                        you get a good basis for creating more value out of your data.
+
+                        we are specialists in data platforms/data warehouses on the Microsoft platform, 
+                        and deliver significant deliveries for customers locally and internationally</p>
+                         <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Power BI</h2>
+                    <p>This is Power BI dashbord , build with  Maven Cycles data.
+                        a boutique bicycle equipment shop model. The goals was to use entire Microsoft Power  BI ecosystem
+                         to design, build, and deploy reports and dashboard across organization.</p>
+                         <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h2>Machine Learning</h2>
+                    <p> I help you reinforce and automate decisions through the use of artificial intelligence.
+                        I build machine learning models that streamline and simplify work processes.
+                        The solutions allow you to perform automated analyzes that can identify valuable 
+                        patterns in large amounts of data and historical trends.
+                         This will give you deeper insight and the opportunity to make
+                          predictions that will strengthen your decision-making basis in a number of important areas</p>
+                         <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------Projects------->
+<div id="project">
     <div class="container">
-        <nav>
-            <img src="images/bosar logo1 (1).png" class="logo">
-            <ul>
-                <li><a href="About">About</a></li>
-                <li><a href="Projects">Projects</a></li>
-                <li><a href="Conctat">Contact</a></li>
-                <li><a href="Blog">Blog</a></li>
-            </ul>
-        </nav>
-        <a href="Contact" class="contact-btn">contact me<img src="images/contact.png" ></a>
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/powerbi-rapport.png" >
+                <div class="layer">
+                    <h3>Power BI</h3>
+                    <p>
+                        This is Power BI dashbord , build with  Maven Cycles data.
+                         a boutique bicycle equipment shop model. The goals was to use entire Microsoft Power  BI ecosystem
+                          to design, build, and deploy reports and dashboard across organization.
+                         </p>
+                         <a href="https://app.powerbi.com/links/YyVKCabYZk?ctid=af4eef25-800f-480c-a0e8-1308a8c8e6eb&pbi_source=linkShare"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
 
-        <div class="row">
-          <div class="col-1">
-           <h1>I'm Sarah Monica , Software Developer/Data Analyst. I enjoy Creating beautiful website for my clients.</h1>
-          
-        
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/fausto-sandoval-f5RTaEwpGSo-unsplash.jpg">
+                <div class="layer">
+                    <h3>Data Warehouse </h3>
+                    <p>When all the data is gathered in one place,
+                         you get a good basis for creating more value out of your data​.
+
+                         we are specialists in data platforms/data warehouses on the Microsoft platform, 
+                         and deliver significant deliveries for customers locally and internationally
+                         </p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/fausto-sandoval-f5RTaEwpGSo-unsplash.jpg">
+                <div class="layer">
+                    <h3>Machine Learning </h3>
+                    <p>
+                        I help you reinforce and automate decisions through the use of artificial intelligence.
+                         I build machine learning models that streamline and simplify work processes.
+                         The solutions allow you to perform automated analyzes that can identify valuable 
+                         patterns in large amounts of data and historical trends.
+                          This will give you deeper insight and the opportunity to make
+                           predictions that will strengthen your decision-making basis in a number of important areas
+                         </p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+
+                </div>
+            </div>
             
-        </div>
-        </div>
-
 
     </div>
+</div>
+<a href="#" class="btn">See More</a>
+
+<!------------Contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subs-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hello@sarahmonica.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>00746352789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="#" download class="btn btn2">Download CV</a>
+               
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+    </div>
+    <div class="copyright">
+        <p>© copyright. Made with <i class="fa-solid fa-heart"> </i> by Sarah Monica </p>
+    </div>
+</div>
+
+    
 </body>
 </html>
